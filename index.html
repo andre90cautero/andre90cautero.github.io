@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>André Ramos Cautero</title>
-    <!-- <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/menu.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <header>
     <!-- <a href="projetos.html">Projetos</a> -->
@@ -14,6 +14,12 @@
 
 <body>
     <header class='partes' id='cabecalho'>
+        <div id="toggle">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div id="logo-cab"><img src="./imgs/EU.jpg" alt=""></div>
     </header>
     <div id="fundo">
         <div class="circulo" id="cir1"></div>
@@ -43,8 +49,8 @@
                         <h2>Resumo pessoal</h2>
                         <p>Projetista por formação, apaixonado por programação, ciência e tecnologia, grande fã
                             de ficção
-                            ciêntifica
-                            e músico nas horas vagas!!!<br>
+                            científica
+                            e músico nas horas vagas<br>
                             Atualmente trabalho na minha própria empresa onde presto consultoria em Excel, desenvolvo
                             planilhas, dashboards, e automatização de relatórios. Tenho desde o primeiro contato com o
                             cliente, definição do escopo do projeto, orçamento, desenvolvimento do projeto, programação
@@ -147,10 +153,10 @@
                     <br>
                     <h3>Hard skills</h3>
                     <ul>
+                        <li>PowerBI </li>
                         <li>Excel </li>
                         <li>VBA </li>
                         <li>PowerQuery </li>
-                        <li>PowerBI </li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -172,208 +178,5 @@
     </footer>
 </body>
 
-<style>
-    * {
-        box-sizing: border-box;
-        text-align: left;
-        vertical-align: top;
-
-        font-family: 'Oswald-Regular', Arial, Helvetica, sans-serif;
-        src: url('./fonts/Oswald-Regular.ttf');
-    }
-
-    html,
-    body {
-        width: 100vw;
-        height: 100vh;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    body {
-        display: grid;
-        grid-template-areas: 'cabecalho''fundo''rodape';
-        grid-template-rows: 40px 1fr 40px;
-        background: linear-gradient(90deg, rgb(124, 124, 124), rgb(19, 19, 19));
-    }
-
-    .partes {
-        /* border: solid black 5px; */
-    }
-
-    #cabecalho {
-        grid-area: cabecalho;
-        background: rgb(19, 19, 19);
-    }
-
-    #fundo {
-        grid-area: fundo;
-        display: grid;
-        /* box-shadow: 10px 10px 10px 10px black; */
-
-        grid-template: 'fundo2 principal';
-        grid-template-columns: 800px;
-        grid-template-rows: 100%;
-        margin: 30px 0px;
-        margin-left: calc((100% - 800px)/2);
-        width: 800px;
-        height: 1500px;
-        /* height: 400px; */
-        justify-content: center;
-        z-index: 86;
-        overflow: hidden;
-
-    }
-
-    #fundo2 {
-        grid-area: fundo2;
-        border-radius: 20px;
-        width: 1fr;
-        background-color: white;
-        opacity: 30%;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        z-index: 9;
-
-
-        background: linear-gradient(90deg, white, rgb(19, 18, 18));
-
-
-
-    }
-
-    #principal {
-        border-radius: 20px;
-        display: grid;
-        grid-area: principal;
-        width: 1fr;
-        z-index: 10;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-template-columns: 40% 60%;
-        grid-template-areas: 'esq dir';
-
-    }
-
-    #dir {
-        border-top-left-radius: 20px;
-        display: grid;
-        grid-area: dir;
-        /* border: solid thistle; */
-        grid-template-rows: 100px 50px 270px 530px 1fr;
-        color: rgb(226, 226, 226);
-
-    }
-
-    #esq {
-        border-top-left-radius: 20px;
-        border-Bottom-left-radius: 20px;
-        display: grid;
-        /* border: solid thistle; */
-        grid-area: esq;
-        background-color: white;
-        color: rgb(59, 57, 57);
-    }
-
-    .card {
-
-        /* border: dotted beige; */
-        padding: 5px;
-        margin: 10px;
-    }
-
-    #rodape {
-        grid-area: rodape;
-    }
-
-    #resumoPessoal {
-        grid-area: resPessoal;
-        margin: 10px;
-    }
-
-    #resumoCompetencias {
-        grid-area: resCompetencias;
-
-    }
-
-    #resumo {
-        display: grid;
-        grid-template-areas: 'resPessoal resCompetencias';
-
-    }
-
-    #foto {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    #foto img {
-        border-top-left-radius: 20px;
-        filter: grayscale(2);
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        margin: 0px;
-    }
-
-    a {
-
-        text-decoration: none;
-        color: black;
-
-    }
-
-    #contato div {
-        margin: 10px 0px;
-    }
-
-    .logo {
-        width: 20px;
-    }
-
-    .circulo {
-        position: absolute;
-        background: linear-gradient(90deg, rgb(124, 124, 124), rgb(19, 19, 19));
-
-        border-radius: 50%;
-        overflow: hidden;
-        /* float: left; */
-        /* margin: -30px -50px; */
-        transition: 0.3s ease;
-        z-index: 9;
-
-    }
-
-    #cir1 {
-        width: 500px;
-        height: 500px;
-        margin: 200px -100px;
-    }
-
-    #cir2 {
-        width: 350px;
-        height: 350px;
-        margin: -30px 500px;
-
-    }
-
-    #cir3 {
-        width: 200px;
-        height: 200px;
-        margin: 1350px 250px;
-    }
-
-    #cir4 {
-        width: 150px;
-        height: 150px;
-        margin: 500px 500px;
-    }
-
-    #cir5 {
-        width: 50px;
-        height: 50px;
-        margin: 900px 775px;
-    }
-</style>
 
 </html>
